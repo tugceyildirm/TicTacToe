@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back2">
+
+    <TextView
+        android:id="@+id/baslık"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="Tic Tac Toe"
+        android:textColor="#B30C25"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        />
+    <RelativeLayout
+        android:id="@+id/relativeL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/baslık"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Player 1 Name"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Player 2 Name"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:layout_below="@id/player1" />
+
+        <TextView
+            android:id="@+id/playerOneScore"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/player1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#143CAF"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/playerTwoScore"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:textColor="#8F0F0F"
+            android:textAlignment="center"
+            android:layout_below="@id/playerOneScore"
+            android:layout_toRightOf="@+id/player2" />
+
+    </RelativeLayout>
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeL"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0"
+                android:textSize="26dp" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0"/>
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0"/>
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0"/>
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0"/>
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:backgroundTint="#EAE0E0"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="status"
+            android:textAlignment="center"
+            android:textColor="#A52A03"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:backgroundTint="#8BC34A"
+            android:insetTop="4dp"
+            android:text="Play Again"
+            android:textSize="27dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Reset Game"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:backgroundTint="#F44336"
+
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
